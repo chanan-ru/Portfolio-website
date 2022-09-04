@@ -318,7 +318,7 @@ button[type="submit"]:active {
   display: grid;
   display: -ms-grid;
   grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-columns: auto;
+  -ms-grid-columns: auto / auto;
   grid-gap: 2rem;
 }
 
@@ -454,7 +454,7 @@ button[type="submit"]:active {
 
   .grid_content {
     grid-template-columns: 1fr 1fr;
-    -ms-grid-columns: auto;
+    -ms-grid-columns: auto / auto;
     grid-gap: 1rem;
   }
 
@@ -494,7 +494,7 @@ button[type="submit"]:active {
 @media all and (max-width: 425px) {
   .grid_content {
     grid-template-columns: 1fr;
-    -ms-grid-columns: auto;
+    -ms-grid-columns: auto / auto;
     grid-gap: 1rem;
   }
 
