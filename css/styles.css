@@ -388,8 +388,11 @@ button[type="submit"]:active {
   .logo img {
     max-width: 9.3rem;
   }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> main
 }
 
 @media all and (min-width: 576px) and (max-width: 768px) {
