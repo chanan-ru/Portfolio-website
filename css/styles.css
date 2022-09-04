@@ -97,7 +97,8 @@ label {
   border: 1px solid var(--secondary-color);
 }
 
-.menubar a:hover {
+.menubar a:hover,
+.menubar a:focus {
   color: var(--white-color);
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
