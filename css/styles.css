@@ -84,21 +84,20 @@ label {
   padding: 10px 15px;
   font-weight: 400;
   color: var(--primary-color);
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
   letter-spacing: 0.1rem;
   transition-property: all;
   transition-duration: 0.2s;
 }
 
 .menubar a:visited, {
-  color: var(--white-color);
-  background-color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
 }
 
-.menubar a:hover,
-.menubar a:focus {
+.menubar a:hover {
   color: var(--white-color);
   background-color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
@@ -209,6 +208,7 @@ button[type="submit"]:active {
 
 .yellow_btn a {
   padding: 15px 30px;
+  background-color: var(--white-color);
   border: 1px solid var(--secondary-color);
   display: inline-block;
   color: black;
@@ -217,8 +217,8 @@ button[type="submit"]:active {
 }
 
 .yellow_btn a:visited, {
-  color: var(--white-color);
-  background-color: var(--secondary-color);
+  color: black;
+  background-color: var(--white-color);
   border: 1px solid var(--secondary-color);
 }
 
