@@ -491,7 +491,6 @@ button[type="submit"]:active {
 
   .grid_item {
     flex: 100%;
-    max-width: 100%;
     padding: 15px;
   }
 
