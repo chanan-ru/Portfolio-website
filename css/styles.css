@@ -351,8 +351,13 @@ button[type="submit"]:active {
 }
 
 @media all and (max-width: 992px) {
-  .about_content {
+  .about_content,
+  .profile {
     flex-direction: column;
+  }
+
+  .content_picture img {
+    padding-bottom: 2rem;
   }
 
   .page_title span {
@@ -382,10 +387,6 @@ button[type="submit"]:active {
 
   .logo img {
     max-width: 9.3rem;
-  }
-
-  .content_picture img {
-    padding-bottom: 2rem;
   }
 }
 
