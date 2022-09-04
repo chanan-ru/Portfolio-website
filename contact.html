@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -13,11 +13,12 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- <link rel="stylesheet" href="css/style.production.css"> -->
 </head>
+
 <body>
   <header class="page_header">
     <a href="index.html" class="logo"><img src="./img/chananchida-logo.png" alt="Chananchida Ruengwut"></a>
     <nav class="menubar">
-      <ul>
+      <ul role="tablist">
         <li>
           <a href="index.html" role="tab">Home</a>
         </li>
@@ -43,7 +44,7 @@
         </div>
         <div class="content_section">
           <p>If you have any question, Please do not hersitate to contact me.</p>
-          <form action="" method="post">
+          <form action="index.html" method="post">
             <label for="name">Name</label>
             <input type="text" id="name" required>
 
@@ -55,13 +56,16 @@
             <br>
 
             <label for="messages">Messages</label>
-            <textarea type="textarea" id="messages" rows="10" cols="30" required></textarea>
+            <textarea id="messages" rows="10" cols="30" required></textarea>
 
             <br>
 
             <button type="submit">Send Messages</button>
           </form>
         </div>
+
+
+
       </div>
     </div>
 

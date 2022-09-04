@@ -1,19 +1,16 @@
-/*--
-
+/*
 Code Color From dark -> light
-
 #000000 -> black
 #14213d -> navy
 #fca311; -> yellow
 #e5e5e5 -> gray
 #ffffff -> white
-
---*/
+*/
 :root {
-  --primary-color: #000000;
+  --primary-color: #000;
   --secondary-color: #fca311;
   --body-font-size: 16px;
-  --white-color: #ffffff;
+  --white-color: #fff;
 }
 
 * {
@@ -25,7 +22,6 @@ html {
   font-weight: 300;
   font-size: var(--body-font-size);
   color: var(--primary-color);
-
 }
 
 .container {
@@ -33,12 +29,30 @@ html {
   margin: 0 auto;
 }
 
-a, p, h1, h2, h3, h4, h5, h6, table, caption, tbody, tfoot, thead, tr, th, td, li {
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+li {
   padding-bottom: 0.6rem;
 }
-P{
+
+p {
   line-height: 1.5rem;
 }
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -59,7 +73,7 @@ h2 {
 
 label {
   display: block;
-  padding: 0.6rem 0 3px 0;
+  padding: 0.6rem 0 3px;
 }
 
 .menubar li {
@@ -99,7 +113,7 @@ button[type="submit"] {
   display: inline-block;
   margin-top: 0.6rem;
   padding: 0.6rem 1rem;
-  border-radius: 0px;
+  border-radius: 0;
   border: 2px solid var(--secondary-color);
   color: var(--white-color);
   background-color: var(--secondary-color);
@@ -114,7 +128,7 @@ button[type="submit"] {
   display: inline-block;
   margin-top: 0.6rem;
   padding: 0.6rem 1rem;
-  border-radius: 0px;
+  border-radius: 0;
   border: 2px solid var(--secondary-color);
   color: var(--white-color);
   background-color: var(--secondary-color);
@@ -125,12 +139,16 @@ button[type="submit"] {
   transition-duration: 0.2s;
 }
 
-.button_download:visited, .button_download:hover, .button_download:active {
+.button_download:visited,
+.button_download:hover,
+.button_download:active {
   color: var(--secondary-color);
   background-color: transparent;
 }
 
-button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"]:active {
+button[type="submit"]:visited,
+button[type="submit"]:hover,
+button[type="submit"]:active {
   color: var(--secondary-color);
   background-color: transparent;
 }
@@ -152,9 +170,8 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
 .page_header .menubar {
   flex: 0 1 200px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-flow: row-reverse wrap;
 }
 
 .page_header .menubar:last-child {
@@ -242,13 +259,6 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
   background-color: var(--white-color);
 }
 
-.grid_item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
 .page_title {
   font-weight: 700;
   text-transform: uppercase;
@@ -271,7 +281,7 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
 .page_title span {
   display: block;
   font-size: 2.8rem;
-  color: var(--secondary-color);;
+  color: var(--secondary-color);
 }
 
 .content_padding {
@@ -292,6 +302,7 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
   flex-direction: column;
   justify-content: center;
 }
+
 .about_content .content_section {
   flex: 1 1 70%;
 }
@@ -300,23 +311,21 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
   text-indent: 2rem;
 }
 
-.title_section{
+.title_section {
   margin-bottom: 2rem;
 }
 
-.screenshort{
+.screenshort {
   text-align: center;
   margin-bottom: 1rem;
 }
-.screenshort img{
+
+.screenshort img {
   max-width: 100%;
   height: auto;
 }
 
-/*-- Animation Keyframes--*/
-
-
-/*---- responsive style ------*/
+/* responsive style */
 @media all and (min-width: 1400px) {
   .container {
     max-width: 1320px;
@@ -339,16 +348,18 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
   .container {
     max-width: 720px;
   }
-
 }
+
 @media all and (max-width: 992px) {
   .about_content {
     flex-direction: column;
   }
+
   .page_title span {
     display: inline-block;
     font-size: inherit;
   }
+
   .about_content .title_section {
     margin-bottom: 30px;
   }
@@ -369,19 +380,13 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
     font-size: 1.4rem;
   }
 
-
-
   .logo img {
     max-width: 9.3rem;
   }
 
-
-
   .content_picture img {
     padding-bottom: 2rem;
   }
-
-
 }
 
 @media all and (min-width: 576px) and (max-width: 768px) {
@@ -398,7 +403,7 @@ button[type="submit"]:visited, button[type="submit"]:hover, button[type="submit"
 }
 
 @media all and (min-width: 425px) and (max-width: 768px) {
-
+  /* waiting for content */
 }
 
 @media all and (max-width: 425px) {
