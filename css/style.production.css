@@ -488,6 +488,17 @@ button[type="submit"]:active {
     max-width: 100%;
     padding: 0 2rem;
   }
+
+  .grid_item {
+    flex: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .content_picture img {
+    width: 15rem;
+    max-width: 15rem;
+  }
 }
 
 @media all and (min-width: 425px) and (max-width: 768px) {
@@ -495,15 +506,5 @@ button[type="submit"]:active {
 }
 
 @media all and (max-width: 425px) {
-  .grid_item {
-    -webkit-box-flex: 100%;
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-    padding: 15px;
-  }
-
-  .content_picture img {
-    max-width: 15rem;
-  }
+  /* waiting for content */
 }
