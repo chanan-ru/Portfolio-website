@@ -252,7 +252,9 @@ button[type="submit"]:active {
 
 .grid_content {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
 }
 
@@ -372,6 +374,7 @@ button[type="submit"]:active {
 
   .grid_content {
     grid-template-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
 
@@ -411,6 +414,7 @@ button[type="submit"]:active {
 @media all and (max-width: 425px) {
   .grid_content {
     grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
     grid-gap: 1rem;
   }
 
